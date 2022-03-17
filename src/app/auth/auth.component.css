@@ -1,0 +1,101 @@
+.containerMine {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.7));
+  overflow: hidden;
+}
+
+@media screen and (max-height: 600px) {
+  .containerMine {
+    height: 600px;
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.7));
+  }
+}
+
+.brand {
+  font-size: 160px;
+  font-family: Brush Script MT, sans-serif;
+  color: #ffb703;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow:
+    0 0 7px #000,
+    0 0 10px #fff,
+    0 0 21px #000,
+    0 0 42px #ffb703,
+    0 0 82px #ffb703,
+    0 0 92px #ffb703;
+  cursor: default;
+}
+
+.animate__backInDown {
+  animation-duration: 3s;
+}
+
+.brand:hover {
+  animation: pulse 2s infinite;
+}
+
+.notice {
+  position: relative;
+  top: -60px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  color: #ffb703;
+  letter-spacing: 5px;
+  text-align: center;
+  cursor: default;
+}
+
+.animate__fadeIn {
+  animation-delay: 3s;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  border: 1px solid #ffb703;
+  padding: 20px 0;
+  border-radius: 15px;
+  box-shadow:
+    0 0 42px #ffb703,
+    0 0 82px #ffb703;
+}
+
+input[type="text"] {
+  width: 75%;
+  position: relative;
+  left: 12.5%;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  box-shadow:
+    0 0 20px #ffb703;
+}
+
+input[type="button"] {
+  width: 25%;
+  display: block;
+  position: relative;
+  left: 37.5%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffb703;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  box-shadow:
+    0 0 10px #ffb703;
+}
+
+.box.animate__fadeIn {
+  animation-delay: 3.5s;
+}
