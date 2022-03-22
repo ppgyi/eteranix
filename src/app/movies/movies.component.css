@@ -6,7 +6,7 @@
 
 .containerMine2 {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("movies.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("src/assets/movies.jpg");
   background-size: cover;
   overflow: hidden;
 }
@@ -138,14 +138,14 @@ span:hover {
 }
 
 .arrowLeft {
-  color: rgba(255,255,255,0.8);
+  color: rgb(255,255,255);
   font-size: 30px;
   position: absolute;
   top: 40%;
   cursor: pointer;
 }
 .arrowRight {
-  color: rgba(255,255,255,0.8);
+  color: rgb(255,255,255);
   font-size: 30px;
   position: absolute;
   top: 40%;
