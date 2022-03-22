@@ -4,13 +4,6 @@
   overflow: hidden;
 }
 
-@media screen and (max-height: 600px) {
-  .containerMine {
-    height: 600px;
-    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.7));
-  }
-}
-
 .brand {
   font-size: 140px;
   font-family: serif;
@@ -99,4 +92,11 @@ input[type="button"]:hover {
 
 .box.animate__fadeIn {
   animation-delay: 3.5s;
+}
+
+@media screen and (max-height: 600px) {
+  .containerMine {
+    height: 600px;
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.7));
+  }
 }

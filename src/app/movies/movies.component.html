@@ -1,3 +1,27 @@
 <div class="containerMine">
-
+  <div class="containerMine2 animate__animated animate__zoomIn">
+    <div
+      [class]="navBar">
+      <div [class]="spanButton">
+        <button (click)="spanButtonChange()">
+          <span class="glyphicon glyphicon-align-justify"></span>
+        </button>
+      </div>
+      <div
+        class="chooseBar"
+        (mouseenter)="navBarVisible()"
+        (mouseleave)="navBarInvisible()">
+        <p>Avengers</p>
+        <p>Other sci-fi</p>
+        <p>Comedy</p>
+        <p>Star Wars</p>
+        <p>Documentary</p>
+        <p>Fantasy</p>
+        <p>Horror</p>
+        <p>Thriller</p>
+        <p>Horror</p>
+        <p>Thriller</p>
+      </div>
+    </div>
+  </div>
 </div>
