@@ -19,6 +19,12 @@
   left: -90px;
 }
 
+video {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+
 .navBarLeftVisible {
   height: 100%;
   width: 150px;
