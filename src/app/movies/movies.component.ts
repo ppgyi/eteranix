@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-movies',
@@ -9,6 +9,8 @@ export class MoviesComponent implements OnInit {
 
   spanButton = "buttonSpanRight";
   navBar = "navBarLeftInvisible animate__animated animate__fadeInLeft";
+
+  @ViewChild('panel') panel!: ElementRef;
 
   constructor() { }
 
@@ -37,5 +39,12 @@ export class MoviesComponent implements OnInit {
       this.spanButton = "buttonSpanRight";
       this.navBar = "navBarLeftInvisible";
     }
+  }
+
+  onClickRight() {
+    this.panel.nativeElement.scrollLeft += 150;
+  }
+  onClickLeft() {
+    this.panel.nativeElement.scrollLeft -= 150;
   }
 }
